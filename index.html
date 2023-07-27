@@ -162,6 +162,7 @@
                     <h2 class="section__title">
                         LAPOR DUNSANAK
                     </h2>
+            <form name="submit-to-google-sheet">
                 <div class="Contact">
                     <div class="containerr">
                         <div class="contentt">
@@ -188,16 +189,16 @@
                             <p>Jika Anda memiliki masalah apa pun yang terkait dengan bullying, tawuran, balap liar, dan lainnya, Anda dapat mengirimi saya pesan dari sini.</p>
                           <form action="#">
                             <div class="input-box">
-                              <input type="text" placeholder="Masukkan Nama">
+                              <input type="text" placeholder="Masukkan Nama" name="nama">
                             </div>
                             <div class="input-box">
-                              <input type="text" placeholder="Masukkan Email">
+                              <input type="text" placeholder="Masukkan Email" name="email">
                             </div>
                             <div class="input-box message-box">
-                              <textarea placeholder="Masukkan Pesan"></textarea>
+                              <textarea placeholder="Masukkan Pesan" name="pesan"></textarea>
                             </div>
                             <div class="buttonn">
-                              <input type="button" value="Send Now" >
+                              <input type="submit" value="Send Now" >
                             </div>
                           </form>
                         </div>
@@ -205,11 +206,22 @@
                       </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </form>
+        </section>
+    </main>
 
         <!-- =============== GOOGLE SHEETS =============== -->
-        
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxopIRtWfIr78_-8dhgMRP4bv4CoNSx2LUTql0zMPaafOJnheLLL6WQ1C2yoYm7zsSP/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
 
         <script src=""></script>
 

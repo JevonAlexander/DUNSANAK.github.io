@@ -733,7 +733,7 @@ img {
   display: inline-block;
   margin-top: 12px;
 }
-.right-side .buttonn input[type="button"]{
+.right-side .buttonn input[type="submit"]{
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -744,7 +744,7 @@ img {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.buttonn input[type="button"]:hover{
+.buttonn input[type="submit"]:hover{
   background: #5029bc;
 }
 @media (max-width: 950px) {
