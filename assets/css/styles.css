@@ -68,8 +68,8 @@ html {
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--white-color);
-  color: var(--text-color);
+  background-color: var(--first-color);
+  color: black;
 }
 
 ul {
@@ -101,7 +101,7 @@ img {
 }
 
 .section__title {
-  color: var(--title-color);
+  color: black;
   font-size: var(--big-font-size);
   font-family: var(--second-font);
   font-weight: var(--font-regular);
@@ -111,6 +111,7 @@ img {
 }
 
 .main {
+  display: grid;
   overflow: hidden; /* For animation ScrollReveal */
 }
 
@@ -189,12 +190,13 @@ img {
   transition: color .3s;
 }
 
+.section__titlee{
+  text-align: center;
+  font-size: var(--big-font-size);
+  color: var(--white-color);
+}
+
 .nav__link i{
-  background: linear-gradient(180deg,
-              hsl(39, 62%, 75%) 0%,
-              hsl(39, 62%, 45%) 100%);
-  color: transparent;
-  -webkit-background-clip: text;
   font-size: 1.5rem;
 }
 
@@ -316,8 +318,7 @@ img {
 }
 
 .products__bg{
-  background-color: var(--first-color);
-  border-radius: var(--border-section);
+  background-color: var(--white-color);
 }
 
 .products__container{
@@ -350,7 +351,7 @@ img {
 .products__data,
 .products__card{
   text-align: center;
-  color: var(--white-color);
+  color: var(black);
 }
 
 .products__content{
@@ -386,7 +387,6 @@ img {
 
 .about__bg{
   background-color: var(--white-color);
-  border-radius: var(--border-section);
 }
 
 .about__container{
@@ -416,7 +416,12 @@ img {
 
 .steps__bg{
   background-color: var(--first-color);
-  border-radius: var(--border-section);
+}
+
+.steps__h2{
+  font-size: var(--biggest-font-size);
+  text-align: center;
+  color: var(--white-color);
 }
 
 .steps__container{
@@ -425,7 +430,8 @@ img {
 
 .steps .section__title,
 .steps__description{
-  color: var(--white-color);
+  text-align: center;
+  color: var(black);
 }
 
 .steps__content{
@@ -450,6 +456,14 @@ img {
   justify-content: center;
   position: relative;
   margin-bottom: 1.5rem;
+}
+
+.section__desc{
+  font-size: var(--big-font-size);
+  text-align: center;
+  color: var(--white-color);
+  font-family: var(--body-font);
+  font-weight: var(--font-semi-bold);
 }
 
 .steps__img{
@@ -507,6 +521,35 @@ img {
   opacity: .15;
 }
 
+.steps__description{
+  font-size: var(--font-medium);
+  color: var(--white-color);
+}
+
+.steps__imgg{
+  justify-self: center;
+}
+
+.img__youth{
+  border-radius: 1rem;
+  justify-self: center;
+}
+
+.tarimokasih{
+  background-color: var(--white-color);
+}
+
+.steps__h22{
+  margin-top: 50px;
+  font-size: var(--biggest-font-size);
+  text-align: center;
+  color: black;
+}
+
+.steps__h33{
+  text-align: center;
+  font-size: 250%;
+}
 /*=============== TESTIMONIAL ===============*/
 
 
