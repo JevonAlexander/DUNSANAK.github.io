@@ -10,7 +10,7 @@
   --first-color: hsl(208, 80%, 50%);
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
-  --white-color: hsl(0, 0%, 95%);
+  --white-color: hsl(0, 0%, 100%);
   --title-color: hsl(0, 0%, 0%);
   --text-color: hsl(0, 0%, 35%);
   --text-color-light: hsl(0, 0%, 64%);
@@ -414,7 +414,7 @@ body.dark-theme{
 
 .home__img{
   margin-top: 3rem;
-  margin-left: 1.5rem;
+  margin-left: 0.9rem;
   position: relative;
   z-index: 10;
   
